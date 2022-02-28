@@ -1,2 +1,2 @@
 # ICog-Labs
-I am officially joined icog labs internship program today
+I have officially joined icog labs internship program since Jun 2022
