@@ -16,12 +16,12 @@ Problem solving in LeetCode.com and HackerRank.com online problem solving challe
 Watching youtube videos that are related to Deep Learning 
 
 # Feb 26 - 28, 2022
-<h1>.</h1> Recommendation system using pytorch in python 
-<h1>.</h1> Collaborative filtering and Content based filtering
+<strong>.</strong> Recommendation system using pytorch in python 
+<strong>.</strong> Collaborative filtering and Content based filtering
 <h1>.</h1> User-based filtering and Item based filtering
 <h1>.</h1> I have been practicing recommendation system with Neural Network  by using MovieLens dataset and Pytorch low level API
 <h1>.</h1> I have been studying about Docker and WordPress
-# March 2-3
+# March 2-3, 2022
 <h1>.</h1> Recommender System Using Amazon Reviews
 <h1>.</h1> Model-based collaborative filtering system
 
