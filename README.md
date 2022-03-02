@@ -1,30 +1,30 @@
 # ICog-Labs
-I have officially joined icog labs internship program since January 2022
+I have officially joined icog labs internship program since January 2022.<br>
 
-# Sefineh Tesfa
+# Sefineh Tesfa<br>
 
-# Feb 4 - 11,2022
+# Feb 4 - 11,2022<br>
 
-<h1>.</h1> I have completed Introduction to Deep Learning with Pytorch, Udacity
-<h1>.</h1> I have been learning transfer learning using pytorch.
-<h1>.</h1> I have practiced on image classification by using MNIST and FashionMNIST datasets
-<h1>.</h1> I have spent lots of time understanding the scene behind Neural Network, Just the detailed concept, not much more about the programming aspects.
- <h1>.</h1>Web scraping by using BeautifulSoup and requests module in python
+I have completed Introduction to Deep Learning with Pytorch, Udacity.<br>
+I have been learning transfer learning using pytorch.<br>
+I have practiced on image classification by using MNIST and FashionMNIST datasets.<br>
+I have spent lots of time understanding the scene behind Neural Network, Just the detailed concept, not much more about the programming aspects.<br>
+Web scraping by using BeautifulSoup and requests module in python.<br>
 # Feb 11 - 26,2022
-Just practicing i.e Transfer learning by using Pre Trained deep learning models like VGG16, resnet. 
-Problem solving in LeetCode.com and HackerRank.com online problem solving challenge platforms
-Watching youtube videos that are related to Deep Learning 
+Just practicing i.e Transfer learning by using Pre Trained deep learning models like VGG16, resnet. <br>
+Problem solving in LeetCode.com and HackerRank.com online problem solving challenge platforms.<br>
+Watching youtube videos that are related to Deep Learning. <br>
 
-# Feb 26 - 28, 2022
-<strong>.</strong> Recommendation system using pytorch in python 
-<strong>.</strong> Collaborative filtering and Content based filtering
-<h1>.</h1> User-based filtering and Item based filtering
-<h1>.</h1> I have been practicing recommendation system with Neural Network  by using MovieLens dataset and Pytorch low level API
-<h1>.</h1> I have been studying about Docker and WordPress<br>
+# Feb 26 - 28, 2022<br>
+Recommendation system using pytorch in python. <br>
+Collaborative filtering and Content based filtering.<br>
+User-based filtering and Item based filtering.<br>
+I have been practicing recommendation system with Neural Network  by using MovieLens dataset and Pytorch low level API.<br>
+I have been studying about Docker and WordPress.<br>
 
 # March 2-3, 2022
-Recommender System Using Amazon Reviews
-Model-based collaborative filtering system
+Recommender System Using Amazon Reviews.<br>
+Model-based collaborative filtering system.<br>
 
 
 
