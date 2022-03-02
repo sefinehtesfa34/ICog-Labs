@@ -20,7 +20,7 @@ Watching youtube videos that are related to Deep Learning
 <strong>.</strong> Collaborative filtering and Content based filtering
 <h1>.</h1> User-based filtering and Item based filtering
 <h1>.</h1> I have been practicing recommendation system with Neural Network  by using MovieLens dataset and Pytorch low level API
-<h1>.</h1> I have been studying about Docker and WordPress
+<h1>.</h1> I have been studying about Docker and WordPress<br>
 # March 2-3, 2022
 <h1>.</h1> Recommender System Using Amazon Reviews
 <h1>.</h1> Model-based collaborative filtering system
