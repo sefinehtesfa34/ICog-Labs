@@ -65,9 +65,7 @@ min_user_ratings =  5 #a user rated movies at least
 
 ratings_flrd_df = ratings_df.groupby("movieId").filter(lambda x: x['movieId'].count() >= min_movie_ratings)
 ratings_flrd_df = ratings_flrd_df.groupby("userId").filter(lambda x: x['userId'].count() >= min_user_ratings)
-
-
-
+ratings_flrd_df.to_csv("ratings_flrd_df.csv",index=False)
 print("{0} movies deleted; all movies are now rated at least: {1} times. Old dimensions: {2}; New dimensions: {3}"\
 .format(len(ratings_df.movieId.value_counts()) - len(ratings_flrd_df.movieId.value_counts())\
         ,min_movie_ratings,ratings_df.shape, ratings_flrd_df.shape ))
