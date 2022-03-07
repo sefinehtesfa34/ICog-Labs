@@ -73,36 +73,15 @@ Once again, this article discusses Collaborative Item-based Filtering and focuse
 # Matrix Factorization
 Hopcroft and Kannan (2012), explains the whole concept of matrix factorization on customer data where m customers buy n products. The authors explain collaborative filtering in a comprehensive language. For demonstrative purposes, the author of this article demonstrates the concept on a specific case.
 
-Let matrix 
-R
-m
-∗
-n
- represent the ratings on movies assigned by each user, also called the utility matrix. Specifically, the value 
-r
-i
-j
-=
-5
+Let matrix <span>R<sub>m∗n</sub></s/pan>
+ represent the ratings on movies assigned by each user, also called the utility matrix. Specifically, the value <span>r<sub>ij</sub><span>=5
  represents the rating of user i assigned to movie j. However, the individual's preference is determined by k factors. For example, the user's age, sex, income, education, etc. are likely to affect the user's behavior. Accordingly, the individual's rating of a movie (
-r
-i
-j
+<span>r<sub>ij</sub><span>
 ) is determined by some weighted combinations of the hidden factors. In practice, customer's behavior can be characterized by a k-dimensional vector with much lower dimensions than the original matrix 
 R
- with 
-m
-∗
-n
+ with m∗n
  dimensions. The vector's components, also called the latent factors, represent the weight of each factor. For example, given a vector 
-v
-2
-=
-[
-0.2
-,
-0.8
-]
+ v2=[0.2,0.8]
  it can be hypothesized that there are only two (unknown) latent factors with subsequent weights describing the rating (behavior).
 
 Matrix factorization is an effective CF technique because it benefits from the properties of linear algebra. Specifically, consider matrix 
