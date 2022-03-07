@@ -30,4 +30,19 @@ Model-based collaborative filtering system.<br>
 <a href="https://www.jiristodulka.com/post/recsys_cf/">recommendation system</a>
 
 
+# March 3-4, 2022
+Recommendation system tutorial at LinkedIn.com the link is (https://www.linkedin.com/learning/machine-learning-and-ai-foundations-recommendations/recommend-by-predicting-missing-user-ratings?autoSkip=true&autoplay=true&resume=false)
+
+ Sentimental analysis using Natural Language processing 
+# March 4,2022
+Starting Mathematics for Machine learning course on Coursera.
+# March 4-6,2022
+Completed Mathematics for Machine learning course week 1-week 4
+# March 6, 2022 
+Practicing recommender system using pytorch (at the office)
+ 
+
+
+
+
 
