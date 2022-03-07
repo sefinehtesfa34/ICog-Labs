@@ -114,4 +114,4 @@ R
 SVD decomposes any matrix into singular vectors and singular values. If the reader has previous experience with machine learning, particularly with dimensionality reduction, they would find traditional use of SVD in Principal Component Analysis (PCA). Simply put, SVD is equivalent to PCA after mean centering, i.e. shifting all data points so that their mean is on the origin (Gillis, 2014).
 
 Formally, SVD is decomposition of a matrix R into the product of three matrices: 
-Rm∗n=Um∗m Dm∗n <span>V<sup>t</sup><span/> n∗n.
+Rm∗n=Um∗m Dm∗n <span>V<sup>t</sup></span> n∗n.
