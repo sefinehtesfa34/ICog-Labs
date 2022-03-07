@@ -73,7 +73,7 @@ Once again, this article discusses Collaborative Item-based Filtering and focuse
 # Matrix Factorization
 Hopcroft and Kannan (2012), explains the whole concept of matrix factorization on customer data where m customers buy n products. The authors explain collaborative filtering in a comprehensive language. For demonstrative purposes, the author of this article demonstrates the concept on a specific case.
 
-Let matrix <span>R<sub>m∗n</sub></s/pan>
+Let matrix <span>R<sub>m∗n</sub></span>
  represent the ratings on movies assigned by each user, also called the utility matrix. Specifically, the value <span>r<sub>ij</sub><span>=5
  represents the rating of user i assigned to movie j. However, the individual's preference is determined by k factors. For example, the user's age, sex, income, education, etc. are likely to affect the user's behavior. Accordingly, the individual's rating of a movie (
 <span>r<sub>ij</sub><span>
