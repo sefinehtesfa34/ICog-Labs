@@ -26,7 +26,8 @@ I have been studying about Docker and WordPress.<br>
 Recommender System Using Amazon Reviews.<br>
 Model-based collaborative filtering system.<br>
 
-
+# Recommendation system 
+<a href="https://www.jiristodulka.com/post/recsys_cf/">recommendation system</a>
 
 
 
