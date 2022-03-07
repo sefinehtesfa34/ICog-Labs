@@ -94,3 +94,36 @@ SVD decomposes any matrix into singular vectors and singular values. If the read
 
 # Formally, SVD is decomposition of a matrix R into the product of three matrices: 
 Rm∗n=Um∗m Dm∗n <span>V<sup>t</sup></span> n∗n.
+
+
+
+
+
+Where 
+<span>R<sub>m*n</sub></span>
+
+ denotes the utility matrix with n equal to the number of e.g. users and m number exposed items (movies). <span>U<sub>m*m</sub></span>
+
+ is a left singular orthogonal matrix, representing the relationship between users and latent factors (Hopcroft & Kannan, 2012). 
+<span>D<sub>m*n</sub></span>
+ is a diagonal matrix (with positive real values) describing the strength of each latent factor. 
+<span>V<sup>t</sup><sub>n*n</sub></span>
+ (transpose) is a right singular orthogonal matrix, indicating the similarity between items and latent factors.
+
+The general goal of SVD (and other matrix factorization methods) is to decompose the matrix R with all missing 
+<span>r<sub>ij</sub></span>
+ and multiply its components 
+Rm∗n=Um∗m Dm∗n <span>V<sup>t</sup></span> n∗n once again. 
+As a result, there are no missing values 
+<span>r<sub>ij</sub></span>
+ and it is possible to recommend each user movies (items) they have not seen or purchased yet. To better understand linear algebra behind SVD, one can watch Gilbert Strang's lecture on SVD for MIT OpenCourseWare on YouTube channel or visit refer to NIT Singular Value Decomposition (SVD) tutorial.
+
+
+
+
+
+
+
+
+
+
