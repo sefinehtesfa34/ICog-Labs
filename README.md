@@ -108,15 +108,15 @@ Where
 <span>D<sub>m*n</sub></span>
  is a diagonal matrix (with positive real values) describing the strength of each latent factor. 
 <span>V<sup>t</sup><sub>n*n</sub></span>
- (transpose) is a right singular orthogonal matrix, indicating the similarity between items and latent factors.
+ (transpose) is a right singular orthogonal matrix, indicating the <strong>similarity between items and latent factors</strong>.
 
 The general goal of SVD (and other matrix factorization methods) is to decompose the matrix R with all missing 
 <span>r<sub>ij</sub></span>
  and multiply its components 
 Rm∗n=Um∗m Dm∗n <span>V<sup>t</sup></span> n∗n once again. 
-As a result, there are no missing values 
+<strong>As a result, there are no missing values 
 <span>r<sub>ij</sub></span>
- and it is possible to recommend each user movies (items) they have not seen or purchased yet. To better understand linear algebra behind SVD, one can watch Gilbert Strang's lecture on SVD for MIT OpenCourseWare on YouTube channel or visit refer to NIT Singular Value Decomposition (SVD) tutorial.
+ and it is possible to recommend each user movies (items) they have not seen or purchased yet</strong>. To better understand linear algebra behind SVD, one can watch Gilbert Strang's lecture on SVD for MIT OpenCourseWare on YouTube channel or visit refer to NIT Singular Value Decomposition (SVD) tutorial.
 
 
 
