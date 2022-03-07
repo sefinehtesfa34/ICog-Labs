@@ -45,7 +45,7 @@ Practicing recommender system using pytorch (at the office)
 
 
 
-<h2 style="color:orange;">Types of the Systems</h1>
+<h1 style="color:orange;">Types of the Systems</h1>
 There are many ways and complex algorithms used to build a recommender system. The following are fundamental approaches. While reading, the reader should think which one may be the most effective method when it comes to a movie recommendation.
 
 # The Most Popular Item: 
