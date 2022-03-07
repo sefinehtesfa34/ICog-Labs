@@ -71,3 +71,29 @@ ratings_flrd_df = ratings_flrd_df.groupby("userId").filter(lambda x: x['userId']
 print("{0} movies deleted; all movies are now rated at least: {1} times. Old dimensions: {2}; New dimensions: {3}"\
 .format(len(ratings_df.movieId.value_counts()) - len(ratings_flrd_df.movieId.value_counts())\
         ,min_movie_ratings,ratings_df.shape, ratings_flrd_df.shape ))
+
+
+
+reader=Reader(rating_scale=(0.5,5)) # line_format by default order of the fields
+data=Dataset.load_from_df(ratings_flrd_df[["userId","movieId","rating"]],reader=reader)
+trainset=data.build_full_trainset()
+testset=trainset.build_anti_testset()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

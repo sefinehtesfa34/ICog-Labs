@@ -69,3 +69,42 @@ As the name suggests, the Hybrid Models combine two or more recommendation strat
 ##### With the ever-growing volume of online information, recommender systems have been an effective strategy to overcome such information overload. The utility of recommender systems cannot be overstated, given its widespread adoption in many web applications, along with its potential impact to ameliorate many problems related to over-choice.
 # Collaborative Filtering: Model-Based Approach
 Once again, this article discusses Collaborative Item-based Filtering and focuses on the Model-Based Approach which tackles the two challenges imposed by CF. Unlike Memory-Based Approach, Model-Based procedure facilitates machine learning techniques such as Singular Value Decomposition (SVD) and Matrix Factorization models to predict the end user's rating on unrated items. In the context of a movie-to-movie recommender, a collaborative filter answers the question: “What movies have a similar user-rating profile?"(Lineberry & Longo, 2018).
+
+# Matrix Factorization
+Hopcroft and Kannan (2012), explains the whole concept of matrix factorization on customer data where m customers buy n products. The authors explain collaborative filtering in a comprehensive language. For demonstrative purposes, the author of this article demonstrates the concept on a specific case.
+
+Let matrix 
+R
+m
+∗
+n
+ represent the ratings on movies assigned by each user, also called the utility matrix. Specifically, the value 
+r
+i
+j
+=
+5
+ represents the rating of user i assigned to movie j. However, the individual's preference is determined by k factors. For example, the user's age, sex, income, education, etc. are likely to affect the user's behavior. Accordingly, the individual's rating of a movie (
+r
+i
+j
+) is determined by some weighted combinations of the hidden factors. In practice, customer's behavior can be characterized by a k-dimensional vector with much lower dimensions than the original matrix 
+R
+ with 
+m
+∗
+n
+ dimensions. The vector's components, also called the latent factors, represent the weight of each factor. For example, given a vector 
+v
+2
+=
+[
+0.2
+,
+0.8
+]
+ it can be hypothesized that there are only two (unknown) latent factors with subsequent weights describing the rating (behavior).
+
+Matrix factorization is an effective CF technique because it benefits from the properties of linear algebra. Specifically, consider matrix 
+R
+ as a record of various elements. As it is possible to decompose any integer into the product of its prime factor, matrix factorization also enables humans to explore information about matrices and their functional properties an array of elements (Goodfellow, Bengio, 2016)
