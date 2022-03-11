@@ -135,18 +135,89 @@ def plot_rmse(rmse, algorithm):
   plt.ylabel("Mean RMSE (cv=5)")
   plt.axvline(np.argmin(rmse), color = "r")
 
+# GridsearchCV (Sample)
+param_grid = {'n_factors': [4,6,9,11,14,18,29]}
+gs = GridSearchCV(SVD, param_grid, measures=['rmse'], cv=5)
+gs.fit(data)
+# best RMSE score
+print(gs.best_score['rmse'])
+# combination of parameters that gave the best RMSE score
+print(gs.best_params['rmse'])
 
 
+# output
+# 0.8639552777419859
+# {'n_factors': 11}
+# To make the model generalizable, i.e. avoid over and underfitting, the grid algorithm finds n_factors = 11 optimal
+# raining SVD Algorithm and Predictions
+# Next, SVD(n_factors = 11) fits the model on trainset. 
+# To predict values, i.e. ratings, for each empty element 
+# aij
+#  in the utility matrix, it is essential to specify: a.) 
+#  the users and b.) particular movies that are not in the trainset.
+#   build_anti_testset() method of trainset accomplishes the goal. 
+#   It returns a list of ratings (testset) that are not in 
+#   the trainset or in the entire utility matrix R
+# . Consequently, it is possible to use the fitted model and predict ratings 
+# for movies in testset. algo_SVD.test(testset)
+# returns the list with predictions.
+
+algo_SVD = SVD(n_factors = 11)
+algo_SVD.fit(trainset)
 
 
+# Predict ratings for all pairs (i,j) that are NOT in the training set.
+testset = trainset.build_anti_testset()
+
+predictions = algo_SVD.test(testset)
+
+# subset of the list  predictions
+predictions[0:2]
 
 
+def get_top_n(predictions, userId, movies_df, ratings_df, n = 10):
+    '''Return the top N (default) movieId for a user,.i.e. userID and history for comparisom
+    Args:
+    Returns: 
+  
+    '''
+    #Peart I.: Surprise docomuntation
+    
+    #1. First map the predictions to each user.
+    top_n = defaultdict(list)
+    for uid, iid, true_r, est, _ in predictions:
+        top_n[uid].append((iid, est))
 
+    #2. Then sort the predictions for each user and retrieve the k highest ones.
+    for uid, user_ratings in top_n.items():
+        user_ratings.sort(key = lambda x: x[1], reverse = True)
+        top_n[uid] = user_ratings[: n ]
+    
+    #Part II.: inspired by: https://beckernick.github.io/matrix-factorization-recommender/
+    
+    #3. Tells how many movies the user has already rated
+    user_data = ratings_df[ratings_df.userId == (userId)]
+    print('User {0} has already rated {1} movies.'.format(userId, user_data.shape[0]))
 
+    
+    #4. Data Frame with predictions. 
+    preds_df = pd.DataFrame([(id, pair[0],pair[1]) for id, row in top_n.items() for pair in row],
+                        columns=["userId" ,"movieId","rat_pred"])
+    
+    
+    #5. Return pred_usr, i.e. top N recommended movies with (merged) titles and genres. 
+    pred_usr = preds_df[preds_df["userId"] == (userId)].merge(movies_df, how = 'left', left_on = 'movieId', right_on = 'movieId')
+            
+    #6. Return hist_usr, i.e. top N historically rated movies with (merged) titles and genres for holistic evaluation
+    hist_usr = ratings_df[ratings_df.userId == (userId) ].sort_values("rating", ascending = False).merge\
+    (movies_df, how = 'left', left_on = 'movieId', right_on = 'movieId')
+    
+    
+    return hist_usr, pred_usr
 
+hist_SVD_124, pred_SVD_124 = get_top_n(predictions, movies_df = movies_df, userId = 124, ratings_df = ratings_df)
 
-
-
+hist_SVD_124.head(15)
 
 
 
