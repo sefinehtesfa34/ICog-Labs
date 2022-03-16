@@ -125,5 +125,66 @@ Rm∗n=Um∗m Dm∗n <span>V<sup>t</sup></span> n∗n once again.
 
 
 
+#My progress on ICog Labs internship
+ 
+ Sefineh Tesfa
+
+Feb 4 - 11,2022
+
+I have completed Introduction to Deep Learning with Pytorch, Udacity
+I have been learning transfer learning using pytorch.
+I have practiced on image classification by using MNIST and FashionMNIST datasets
+I have spent lots of time understanding the scene behind Neural Network, Just the detailed concept, not much more about the programming aspects.
+ Web scraping by using BeautifulSoup and requests module in python
+
+
+Feb 11 - 26,2022
+Just practicing i.e Transfer learning by using Pre Trained deep learning models like VGG16, resnet. 
+Problem solving in LeetCode.com and HackerRank.com online problem solving challenge platforms
+Watching youtube videos that are related to Deep Learning 
+
+Feb 26 - 28, 2022
+.Recommendation system using pytorch in python 
+.Collaborative filtering and Content based filtering
+User-based filtering and Item based filtering
+.I have been practicing recommendation system with Neural Network  by using MovieLens dataset and Pytorch low level API
+.I have been studying about Docker and WordPress
+
+March 2-3, 2022
+Recommender System Using Amazon Reviews
+Model-based collaborative filtering system
+Collaborative filtering and Content based recommendations system in advance
+
+March 3-4, 2022
+Recommendation system tutorial at LinkedIn.com the link is (https://www.linkedin.com/learning/machine-learning-and-ai-foundations-recommendations/recommend-by-predicting-missing-user-ratings?autoSkip=true&autoplay=true&resume=false)
+
+ Sentimental analysis using Natural Language processing 
+March 4,2022
+Starting Mathematics for Machine learning course on Coursera.
+March 4-6,2022
+Completed Mathematics for Machine learning course week 1-week 4
+March 6, 2022 
+Practicing recommender system using pytorch (at the office)
+March 7-9, 2022
+Linear Transformation such as Rotation,Reflection, Projection, Dot product and cross  product of vectors in space.
+Matrix transformations
+Orthogonal projection using Gram schmidt process, transformation of basis vectors
+Eigenvectors  and Eigenvalues in practice 
+March 11, 2022
+Completed module  Mathematics for machine learning:Linear Algebra in Coursera Platform
+Here is the link https://www.coursera.org/account/accomplishments/verify/4FFRG9RSSXFE
+Start Deep Learning specialization courses in Coursera platform
+Studied Django RestFul API documentations to use for machine learning model presentations, Web applications. 
+March 12, 2022
+Computational Graph for Backpropagation illustrations
+Gradient Descent and Vectorization
+I have built a simple User-based recommender system using K Nearest Neighbors Classifier of scikit learn python library.
+Completed week 1-week 2 Deep learning specialization course on Coursera platform
+March 13, 2022
+Completed Deep Learning specialization course on Coursera platform
+Here is the link https://www.coursera.org/account/accomplishments/verify/PASFPGYXZPEZ
+# March 14-15,2022
+Completed week 1-week 2 Machine learning on Coursera platform
+I built a small demo of a User based collaborative filtering recommender system by using Scikit learn K neighbors classifier.
 
 
