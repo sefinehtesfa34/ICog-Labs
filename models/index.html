@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+
+    <title>Tensorflow model deployment using python and javascript</title>
+</head>
+<body>
+    <h1>Machine learning model deployment using  Tensorflow</h1>
+
+</body>
+
+<script>
+    async function load() {
+        const model = await tf.loadLayersModel('model_js/model.json');
+        return model;
+};
+
+function predict(model) {
+  // code to connect to the <input> given value will go here (just not yet)
+  
+  const userInput = document.getElementById('userInput').value
+  const inputTensor = tf.tensor([parseInt(userInput)]);  // then convert to tensor
+
+  // now lets make the prediction, we use .then because the model is a promise
+  // (this is confusing as a Python user, but useful so check it out if interested)
+  model.then(model => {
+    let result = model.predict(inputTensor);  // make prediction like in Python
+    result = result.round().dataSync()[0];  // round prediction and get value
+    alert(result ? "odd" : "even");  // creates pop-up, if result == 1 shows 'odd', otherwise 'even'
+  });
+};
+
+const model = load();  // load the model now to prevent any delay when user clicks 'Predict'
+</script>
+
+<input id="userInput" type="text"></input>
+<button onclick="predict(model)">Predict</button>
+    
+</html>
